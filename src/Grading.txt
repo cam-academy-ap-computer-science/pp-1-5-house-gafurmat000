@@ -1,0 +1,24 @@
+Graded 9/18 by Mark Congdon
+
+Total Score:		25/25
+
+Compiles and Runs:	15/15
+Correct Output:		6/6
+Consistent Style:	2/2
+Efficiency:			2/2
+
+Good work!  Your program is very clean and works well.
+
+For future projects, you will want to start adding comments.
+Everybody does comments slightly differently, but anything that
+would have helped show structure or break up the verses would
+make the code easier to read and maintain in the future.
+
+There is one efficiency that could be added.  Notice that
+every time you call AteMalt(), you call ThatJackBuilt() immediately
+afterwards.  Therefore, you could add ThatJackBuilt() at the end of
+your AteMalt() method, and remove it from the verse methods.  Then,
+you could do the same thing with KilledRat() (add AteMalt() at the
+end of it), etc.  Your MilkedCow() function, then, would be your last
+line, and it would automatically call the rest of the methods for the
+last verse.
